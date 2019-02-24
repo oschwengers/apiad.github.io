@@ -1,7 +1,8 @@
 ---
 template: default
 permalink: /about
-published: true
+title: About me
+description: A bit of an introduction
 ---
 
 My name is Alejandro Piad. I'm a Computer Scientist from Havana, Cuba.
@@ -18,7 +19,7 @@ Currently I'm teaching _Programming_ to first year university students
 (practical lessons), and _Compilers & Formal Languages_ to third year
 students (main lecturer). I'm also in the middle of a joint PhD program,
 between the University of Havana and the University of Alicante,
-where I do research mostly about deep learning applied to knowledge discovery.
+where I do research mostly about [deep learning applied to knowledge discovery](https://github.com/knowledge-learning).
 
 In my free time I also enjoy coding, playing video games (althought not that much lately),
 and writing. I write that interests me, just for the fun of sharing it.

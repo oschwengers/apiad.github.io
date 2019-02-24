@@ -15,6 +15,14 @@ defaults:
     values:
       layout: "post"
 
+important_pages:
+  - About me
+
+repositories:
+  - ehealthkd-2019
+  - jsonapi
+  - compilers
+
 # topics:
 #   - name: Machine Learning
 #     web_url: https://github.com/topics/machine-learning
