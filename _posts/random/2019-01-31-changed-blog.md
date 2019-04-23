@@ -1,7 +1,7 @@
 ---
 title: "I changed my blogging platform... again"
 categories:
-  - Ramblings
+  - Random
 ---
 
 I recently started using Github pages and Jekyll for blogging. This post summarizes my reasons.
