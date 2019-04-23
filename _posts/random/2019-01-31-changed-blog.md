@@ -12,7 +12,7 @@ I started blogging around 2012 using a local WordPress copy. Honestly, none of t
 
 To overcome those problems I tried everything from hosting a local WordPress that I would `rsync` with the online version to using Windows Live Writer... yeah, I know... I was different back then.
 
-Then came the era of static websites, I transitioned through Jekyll, Pelican and finally Hugo and settled there for a while. I hosted my own Hugo at a private VPS in Digital Ocean and would automatically `git pull` and regenerate using Github and Caddy. However, the major problem was that I was serving from my VSP hence, no `HTTPs` (this was before Let's Encrypt) and a bunch of maintenance problems. Let's Encrypt came alive around that time, and for a while I rejoiced in having my own domain with `HTTPs` served directly from my own VPS.
+Then came the era of static websites, I transitioned through Jekyll, Pelican and finally Hugo and settled there for a while. I hosted my own Hugo at a private VPS in Digital Ocean and would automatically `git pull` and regenerate using Github and Caddy. However, the major problem was that I was serving from my VPS hence, no `HTTPs` (this was before Let's Encrypt) and a bunch of maintenance problems. Let's Encrypt came alive around that time, and for a while I rejoiced in having my own domain with `HTTPs` served directly from my own VPS.
 
 There was something cool about that, I felt like I owned something. I was the sole owner of my website, and I could decide exactly how everything was served and delivered...
 
