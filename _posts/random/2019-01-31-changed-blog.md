@@ -4,7 +4,7 @@ categories:
   - Random
 ---
 
-I recently started using Github pages and Jekyll for blogging. This post summarizes my reasons.
+I recently started using Github Pages and Jekyll for blogging. This post summarizes my reasons.
 
 <!--- more --->
 
