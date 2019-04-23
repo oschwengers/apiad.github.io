@@ -10,14 +10,17 @@ plugins:
   - jekyll-octicons
   - jekyll-github-metadata
 
-permalink: /:year/:month/:day/:title/
+permalink: /blog/:title/
 
 important_pages:
   - About me
   - Programming
   - Research
+  - Projects
 
 repositories:
-  - ehealthkd-2019
+  - knowledge-learning/ehealthkd-2019
   - jsonapi
-  - compilers
+  - matcom/compilers
+  - to
+
