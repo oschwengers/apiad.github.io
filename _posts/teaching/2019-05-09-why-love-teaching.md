@@ -1,5 +1,5 @@
 ---
-title: "Why I love teaching"
+title: Why I love teaching
 categories:
   - Teaching
 ---
@@ -18,6 +18,6 @@ My main task is to try and convince them otherwise. The search is not about a *s
 
 So when people ask me "are you an engineer, a scientist or a philosopher?" I answer yes. I'm mostly a scientist, because I do more research than the average engineer; but I'm also an engineer, because I solve more problems than the average philosopher; and, I'm also a philosopher, because I like to think more about the implications of my decisions than the average scientist. I'm also a lot of other things, if you ask. It's not that I'm somehow "better" than any of these individual labels, it's simply that I choose to be my own personal brew of these "things", taking from each what I like and dumping what I don't. To a simple question (*what* are you?) I can only give a simple answer (yes). If you want the details, you'll have to ask a deeper question: *who* are you?
 
-My first day in class every year, I like to throw my a simple question at my students: *who* do you want to be? Most of them answer with a combination of whats. I want to be this or I want to do that. Over the course of the year, some of them actually start to discover they want to *be someone*, not just something. They start dumping the labels and start answering to this question not with things (I want to be a programmer) but with choices (I want to solve this specific problem, I want to cure this disease, I want to create this gadget). Those choices become the *who* they strive for. Eventually, even if unconsciously, most will reach this state. A tiny fraction of them will consciously acknowledge it. And an even smaller fraction, maybe one or two a year, sometimes none, will actually come one day and say to me something like "thank you for helping me find my who", even if not with those exact words.
+My first day in class every year, I like to throw a simple question at my students: *who* do you want to be? Most of them answer with a combination of whats. I want to be this or I want to do that. Over the course of the year, some of them actually start to discover they want to *be someone*, not just something. They start dumping the labels and start answering to this question not with things (I want to be a programmer) but with choices (I want to solve this specific problem, I want to cure this disease, I want to create this gadget). Those choices become the *who* they strive for. Eventually, even if unconsciously, most reach this state. A tiny fraction of them will consciously acknowledge it. And an even smaller fraction, maybe one or two a year, sometimes none, will actually come one day and say to me something like "thank you for helping me find my who", even if not with those exact words.
 
-And that's it. That small moment when I realize someone found itself, and I had a tiny bit of influence. That's my payment. That's why I love teaching.
+And that's it. That small moment when I realize someone found its own best version, and I had a tiny bit of influence. That's my payment. That's why I love teaching.

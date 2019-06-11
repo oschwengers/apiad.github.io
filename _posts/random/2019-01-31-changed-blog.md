@@ -1,5 +1,5 @@
 ---
-title: "I changed my blogging platform... again"
+title: I changed my blogging platform... again
 categories:
   - Random
 ---
