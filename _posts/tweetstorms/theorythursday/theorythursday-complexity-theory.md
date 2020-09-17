@@ -195,3 +195,12 @@ The most important problem in all of CS comes from here, the infamous 🔥P vs N
 But that's a story for another Thursday 😉.
 
 ---
+
+🗨️ If you like this idea, then get into the conversation! Steal this #TheoryThursday hashtag an tell me about your favourite piece of dark magic.
+
+🔔 Just @ me and I'll make sure to weigh in. 
+
+🗒️ Here is the full thread source:
+https://github.com/apiad/apiad.github.io/blob/master/_posts/tweetstorms/theorythursday/theorythursday-complexity-theory.md
+
+---
