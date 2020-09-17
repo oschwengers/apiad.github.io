@@ -1,5 +1,5 @@
 ---
-title: Why I love teaching
+title: Algorithmic Complexity
 categories:
   - Tweetstorms
 ---
@@ -10,7 +10,7 @@ A silly excuse I just invented to share with you random bits of theory from some
 
 ---
 
-Today I want to talk about *Complexity Theory*.
+Today I want to talk about *Algorithmic Complexity*.
 
 To get started, take a look at the following code. How long do you think it will take to run it? 
 
