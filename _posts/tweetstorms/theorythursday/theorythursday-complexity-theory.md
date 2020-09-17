@@ -4,9 +4,9 @@ categories:
   - Tweetstorms
 ---
 
-Hey, guess what, today is #TheoryThursday! 
+Hey, guess what, today is #TheoryThursday 🧐! 
 
-A silly excuse I just invented to share with you random bits of theory from some dark corner of Computer Science, and make it as beginner friendly as possible 👇
+A silly excuse I just invented to share with you random bits of theory from some dark corner of Computer Science and make it as beginner-friendly as possible 👇
 
 ---
 
@@ -27,7 +27,7 @@ def find_element(array, x):
 ```
 -->
 
-![](complexity-example-1.svg)
+![](complexity-example-1.png)
 
 ---
 
@@ -77,11 +77,11 @@ def find_element(array, x):
 ``` 
 -->
 
-![](complexity-example-2.svg)
+![](complexity-example-2.png)
 
 --- 
 
-Depending on how detailed you want to be counting, you could say we have something like 🔥3*N+1🔥 operations in the ultimately worst-case scenario.
+Depending on how detailed you want to be counting, you could say we have something like 🔥3*N+1🔥 operations in the ultimate worst-case scenario.
 
 ❓ Now, why do we care about this? 
 
@@ -91,19 +91,19 @@ The reason is that we can now compare different algorithms.
 
 For example, if your implementation takes 🔥5*N+3🔥, then it is worse, right?
 
-Well, actually, it's not 😝
+Well, it's not 😝
 
-Here's the deal: we have been assuming that all "atomic" operations are equally costly, but this is actually not true...
+Here's the deal: we have been assuming that all "atomic" operations are equally costly, but this is not true...
 
 ---
 
 Hence, it makes no sense to compare my implementation with your implementation by looking at those tiny differences. My 5 * N could be faster than your 3 * N if my "atomic" operations are simpler.
 
-💡 We want is complexity measure that smooths away all implementation details.
+💡 We want a complexity measure that smooths away all implementation details.
 
 ---
 
-To achieve this, we will take away everything that is unimportant when N becomes very large. We will consider that:
+To achieve this, we will take away everything unimportant when N becomes very large. We will consider that:
 
 👉 N+a and N+b are the same;
 👉 a*N and b*N are the same; 
@@ -112,15 +112,15 @@ To achieve this, we will take away everything that is unimportant when N becomes
 
 ---
 
-🔑 And instead of saying 3*N+4 we will say the asymptotic algorithmic complexity is O(N).
+🔑 And instead of saying 3*N+4, we will say the asymptotic algorithmic complexity is O(N).
 
 This is called big-O notation.
 
-💡 We call this a *linear complexity* because the number of operations grows linearly with respect to the size of the array.
+💡 We call this *linear complexity* because the number of operations grows linearly *with respect to* the size of the array.
 
 ---
 
-📝 Formally, it means that your cost is something that is bounded by a linear function.
+🧐 Formally, it means that your function's cost is something that is bounded by a linear function.
 
 💡 Intuitively, what this means is that in the long run, small differences like specific operations matter less than the capacity your algorithm has to *scale* with more data.
 
@@ -152,13 +152,13 @@ def binary_search(array, x):
 ```
 -->
 
-![](complexity-example-3.svg)
+![](complexity-example-3.png)
 
 ---
 
-Actually, binary search is doing much more work in each iteration than linear search. It could be 20 * log N vs 3 * N. Hence, with very small arrays, linear search could be better.
+Binary search is doing much more work in each iteration than linear search. It could be 20 * log N vs 3 * N. Hence, with very small arrays, linear search could be better.
 
-🔑 But there is always a value of N after which binary search will win, in any hardware.
+🔑 But there is always a value of N after which binary search will win, and in any hardware.
 
 ---
 
@@ -170,17 +170,17 @@ Calculating it can be daunting for some non-trivial algorithms, but here are som
 
 1️⃣ Every nested for loop from beginning to end usually means another exponent.
 
-For example, two nested loops usually mean O(N^2), three nested loops, O(N^3), and four nested loops means you really need to take a break and, afterwards, please refactor that code.
+For example, two nested loops usually mean O(N^2), three nested loops, O(N^3), and four nested loops means you really need to take a break and, afterward, please refactor that code.
 
 ---
 
 2️⃣ An invocation to function F inside a loop means you have to multiply N times the complexity of F.
 
-For example, if we call binary search for element of the array, the resulting algorithm is O(N log N)
+For example, if we call binary search for each element of the array, the resulting algorithm is O(N log N)
 
 ---
 
-3️⃣ In recursive methods, if you split at the middle and recurse down only one branch, that's O(log N). It you recurse down both branches, you usually have O(N log N).
+3️⃣ In recursive methods, if you split at the middle and recurse down only one branch, that's O(log N). If you recurse down both branches, you usually have O(N log N).
 
 These are special cases of a more general rule for recursive methods:
 
@@ -188,10 +188,10 @@ https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)
 
 ---
 
-We have just scratched the surface in this thread. Algorithmic complexity is a fascinating topic that touches all fields in Computer Science.
+Finally, we have just scratched the surface in this thread. Algorithmic complexity is a fascinating topic that touches all fields in Computer Science.
 
 The most important problem in all of CS comes from here, the infamous 🔥P vs NP🔥.
 
-But that's story for another Thursday 😉.
+But that's a story for another Thursday 😉.
 
 ---
