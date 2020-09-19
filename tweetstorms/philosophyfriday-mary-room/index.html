@@ -148,6 +148,56 @@
       
       
         
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../essays/" class="md-tabs__link">
+          Essays
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" class="md-tabs__link md-tabs__link--active">
+          Tweetstorms
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -233,8 +283,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../essays/" title="Essays" class="md-nav__link">
-      Essays
+    <a href="../../essays/" title="About essays" class="md-nav__link">
+      About essays
     </a>
   </li>
 
@@ -297,8 +347,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Tweetstorms" class="md-nav__link">
-      Tweetstorms
+    <a href="../" title="About tweetstorms" class="md-nav__link">
+      About tweetstorms
     </a>
   </li>
 
@@ -436,7 +486,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../" title="Tweetstorms" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="About tweetstorms" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -445,7 +495,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Tweetstorms
+                About tweetstorms
               </div>
             </div>
           </a>
@@ -476,7 +526,7 @@
       <script>
         app = initialize({
           base: "../..",
-          features: [],
+          features: ["tabs", "instant"],
           search: Object.assign({
             worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)

@@ -141,6 +141,54 @@
       
       
         
+          
+
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="." class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="essays/" class="md-tabs__link">
+          Essays
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="tweetstorms/" class="md-tabs__link">
+          Tweetstorms
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
       
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
@@ -226,8 +274,8 @@
 
 
   <li class="md-nav__item">
-    <a href="essays/" title="Essays" class="md-nav__link">
-      Essays
+    <a href="essays/" title="About essays" class="md-nav__link">
+      About essays
     </a>
   </li>
 
@@ -288,8 +336,8 @@
 
 
   <li class="md-nav__item">
-    <a href="tweetstorms/" title="Tweetstorms" class="md-nav__link">
-      Tweetstorms
+    <a href="tweetstorms/" title="About tweetstorms" class="md-nav__link">
+      About tweetstorms
     </a>
   </li>
 
@@ -371,7 +419,7 @@
       <script>
         app = initialize({
           base: "",
-          features: [],
+          features: ["tabs", "instant"],
           search: Object.assign({
             worker: "assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
