@@ -498,12 +498,11 @@
 <p>❓ Why can't you use regular expressions to process HTML? 🧵👇</p>
 <hr />
 <p>You probably know a bunch of different "programming" languages, right? 
-Python, Java, C++, JavaScript, HTML... There have different keywords, instructions, expressions, punctuation rules, braces, ...</p>
-<p>❓ What is the one thing all these languages have in common? </p>
-<p>👉 They can all be infinitely nested.</p>
+Python, Java, C++, JavaScript, HTML... There have different keywords, expressions, punctuation rules, braces, ...</p>
+<p>❓ What is the one thing they all have in common? </p>
+<p>👉 They can be infinitely nested.</p>
 <hr />
-<p>In all these languages you have some constructions (e.g., expressions) which can be as complex as you desire.
-And this is possible because these constructions are defined recursively. For example:</p>
+<p>In all these languages you have some constructions (e.g., expressions) which can be as complex as you desire. These constructions are defined recursively. For example:</p>
 <p>✏️ An expression is either a number, or a sum, subtraction, multiplication, or division of two expressions.</p>
 <hr />
 <p>❓ But is HTML a programming language or not?</p>
@@ -521,7 +520,9 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <li>👎 63 + ) 23 * ( -- is an invalid sequence</li>
 </ul>
 <hr />
-<p>Here is one possible grammar for expressions. Starting with the symbol <code>&lt;Expression&gt;</code> and applying randomly any rule (called a <em>production</em>), you will always reach some combination of <code>NUMBER</code> and the symbols <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>(</code>, <code>)</code> that is valid. This is called a <em>derivation</em>.</p>
+<p>Here is one possible grammar for expressions. </p>
+<p>Starting with the symbol <code>&lt;Expression&gt;</code> and applying randomly any rule (called a <em>production</em>), you will always reach some combination of <code>NUMBER</code> and the symbols <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>(</code>, <code>)</code> that is valid. </p>
+<p>This is called a <em>derivation</em>.</p>
 <!--
 
 <div class="codehilite"><pre><span></span><code><span class="o">#</span> <span class="p">:</span><span class="o">=</span> <span class="k">is</span> <span class="n">used</span> <span class="k">to</span> <span class="n">define</span> <span class="n">a</span> <span class="k">rule</span>
@@ -571,14 +572,14 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <p>👉 Parsing is finding the sequence of transformations that goes from <code>&lt;Expression&gt;</code> to whatever you want to parse.</p>
 <hr />
 <p>If that sequence exists, then we know that it is a valid expression, and even more, we know everything we need to evaluate it.</p>
-<p>💡 Parsing is the first step that all compilers and interpreters do, from Python, to C++, to yes, the HTML parser in Chrome.</p>
+<p>💡 Parsing is the first step that all compilers and interpreters do, from Python to C++, to yes, the HTML parser in Chrome.</p>
 <hr />
 <p>Now we come round back to regular expressions. </p>
 <p>👉 It turns out that standard regular expressions are computationally insufficient to parse any language that requires a context-free grammar.</p>
-<p>(😢 While proving this is not hard, sadly it is too long for a thread)</p>
+<p>(😢 While proving this is not hard, sadly it is too long for this thread)</p>
 <hr />
 <p>You can say, intuitively, that regular expressions cannot "count" the matching opening and closing parenthesis. This is because regexes, deep down, are just overpriced <em>finite</em> automata.</p>
-<p>(🙄 Yes, I know this is more nuanced, I'm talking about standard regexes)</p>
+<p>(🙄 Yes, I know this is more nuanced, I'm talking about standard regexes only)</p>
 <hr />
 <p>So, next time someone suggests you to "just use a regex to parse that HTML", you can 🤦 and answer, in formal language lingo: "no, regexes cannot parse context-free languages".</p>
 <p>You won't make any new friends, but at least you'll be right 😝</p>
@@ -595,6 +596,12 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <li>🖼️ <a href="https://xkcd.com/208/">https://xkcd.com/208/</a></li>
 </ul>
 <hr />
+<blockquote>
+<p>You can see this tweetstorm as originally posted in this Twitter thread</p>
+</blockquote>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today is <a href="https://twitter.com/hashtag/TheoryThursday?src=hash&amp;ref_src=twsrc%5Etfw">#TheoryThursday</a> 🧐!<br><br>I want to talk about a tiny part of a topic that is one of my passions: Formal Language Theory.<br><br>❓ Why can&#39;t you use regular expressions to process HTML? 🧵👇</p>&mdash; Alejandro Piad-Morffis (@AlejandroPiad) <a href="https://twitter.com/AlejandroPiad/status/1309193959319666689?ref_src=twsrc%5Etfw">September 24, 2020</a></blockquote>
+
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
                 
               
               
