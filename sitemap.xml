@@ -59,5 +59,9 @@
      <loc>https://apiad.net/tweetstorms/mindblowingmonday-languagemodels/</loc>
      <lastmod>2020-09-29</lastmod>
      <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://apiad.net/tweetstorms/technicaltuesday-streamlit/</loc>
+     <lastmod>2020-09-29</lastmod>
+     <changefreq>daily</changefreq>
     </url>
 </urlset>

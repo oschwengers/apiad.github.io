@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://apiad.net/tweetstorms/philosophyfriday-mary-room/">
+        <link rel="canonical" href="https://apiad.net/tweetstorms/technicaltuesday-streamlit/">
       
       
       <link rel="shortcut icon" href="../../avatar.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Mary's Room - @AlejandroPiad</title>
+        <title>Streamlit - @AlejandroPiad</title>
       
     
     
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Mary's Room
+              Streamlit
             
           </span>
         </div>
@@ -415,18 +415,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Mary's Room" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../philosophyfriday-mary-room/" title="Mary's Room" class="md-nav__link">
       Mary's Room
     </a>
-    
   </li>
 
         
@@ -506,11 +499,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../technicaltuesday-streamlit/" title="Streamlit" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Streamlit" class="md-nav__link md-nav__link--active">
       Streamlit
     </a>
+    
   </li>
 
         
@@ -531,7 +531,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/apiad/edit/master/docs/tweetstorms/philosophyfriday-mary-room.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/apiad/edit/master/docs/tweetstorms/technicaltuesday-streamlit.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -539,49 +539,60 @@
                   
                 
                 
-                  <h1>Mary's Room</h1>
+                  <h1>Streamlit</h1>
                 
-                <p>Hey, today is #PhilosophyFriday 🤔!</p>
-<p>How about discussing some philosophical aspects of Computer Science?</p>
-<p>Today I want to talk about Mary's Room 👇</p>
+                <p>Today is #TechnicalTuesday 🤓!</p>
+<p>Let's talk about practical technologies that you can use today.</p>
+<p>In this thread I will tell you about <a href="https://twitter.com/streamlit">@streamlit</a> 🧵👇</p>
 <hr />
-<p>This is a very interesting thought experiment that is related to the nature of knowledge and the difference between knowing something and knowing <em>about</em> something. </p>
-<p>There are many variants of the experiment, but my favorite one goes like this 🧵:</p>
+<p>💡 Streamlit is a Python framework to make data science apps blazingly fast.</p>
+<p>The core value proposition is that you don't need any HTML, CSS or JavaScript, just pure Python. Take a look:</p>
+<video src="https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/udacity_car_demo-2.mp4" width="640px" controls></video>
+
 <hr />
-<p>Mary is a renowned neuroscientist who has studied everything there is to study about human vision. She understands every little bit of science regarding how light enters the eye, how it is received, and how it is processed in the brain... 👇</p>
+<p>❓ Why do you want this?</p>
+<p>As a data scientist, you spend most of your time designing, experimenting and testing models. You probably use Jupyter Notebooks a lot, right? </p>
+<p>What happens when you have to show those models working?</p>
 <hr />
-<p>Furthermore, Mary understands perfectly all the physics of color, she can say exactly which portion of the spectrum is called "red", "green", "blue", or any other color you can mention... 👇</p>
+<p>If you're working for another data scientist, you can probably just share your Python scripts or Notebooks, but at some point in the chain, someone who doesn't ready code will need to see your model in action.</p>
 <hr />
-<p>Even more, Mary has interviewed thousands of people, scanned their brains, measured their retinas. She understands all the physical phenomena that happen when everyone else sees a color... 👇</p>
+<p>At this point, you (or someone) has to build a minimal application, an MVP, that at least shows some input controls, allows you to play with some model parameters, and lets you render some graphs.</p>
 <hr />
-<p>But... Mary is absolutely color blinded. She has a rare genetic disease that makes her see everything in monochrome. So, being the top researcher in the whole world regarding the human experience of color, she has never "experienced" color herself... 👇</p>
+<p>This often takes the form of a Flask application with a minimal HTML frontend, possibly with a minimum JavaScript. And don't forget CSS. </p>
+<p>❓ The question is, who builds this MVP?</p>
 <hr />
-<p>One day, a miracle of science allows Mary to regain the ability to see color, in all its glory. And for the first time in her life, Mary looks up, and she experiences the blue sky ☁️!</p>
+<p>👉 We the data scientists either don't have the skills or we have to spend a ridiculous amount of time dealing with frontend details we couldn't care less (since this is not a product, it's just a demo).</p>
 <hr />
-<p>❓ At this point, does Mary gain any new knowledge that she didn't previously have?</p>
-<p>Think carefully. There is no right or wrong answer, just let me know at this point what do believe and, more importantly, why.</p>
-<p>Before you leave, I have a few more comments to make 👇</p>
+<p>👉 The frontend team is usually busy with, you know, building the <em>real</em> product, and it's inneficient to use their time for building this app which, again, is not the final product.</p>
+<p>🤷 But someone has to do it.</p>
 <hr />
-<p>🅰️ If you think Mary doesn't learn anything new, then you believe in "physicalism": the notion that the physical world is everything there is. In particular, all human experience is ultimately caused by physics and there is nothing above it.</p>
+<p>Enter <a href="https://twitter.com/streamlit">@streamlit</a>. The frontend framework for pragmatic data scientists.</p>
+<p>👍 Forget about writing any HTML, CSS or JavaScript. Everything is pure Python code, and you get a nice reactive for free.</p>
 <hr />
-<p>🅱️ If you think there is something new she attained after experiencing color, that she couldn't possibly have known before, then you believe in the existence of "qualia": subjective experiences that cannot be explained or understood without experiencing them.</p>
+<p>👍 Forget about routes, templates, sessions and global state. Your code looks exactly like a Python script because it is a Python script. Everything is executed top-to-bottom everytime the user changes something.</p>
 <hr />
-<p>🤔 Most philosophers and scientists (including computer scientists) describe themselves as physicalists or at least materialists. However, it is very hard to explain what I experience as "being red" or "being cold" or "being painful", without having you experience it.</p>
+<p>👍 And you get a super powerful caching mechanism as a simple Python decorator that you can use in any heavy method (e.g., downloading data, training a model). So forget about having to manually store all that data.</p>
 <hr />
-<p>"But what does this have to do with computers", you ask?</p>
-<p>Well, if qualia exist, then it is very hard to believe in strong artificial intelligence. Since computers will not experience the world the way we do, how will you know that they know what "pain" or "love" is?</p>
+<p>There is one main caveat:</p>
+<p>⚠️ You have very little customization for layouts or styling. </p>
+<p>But you don't care about that, remember, this is not the final product, is just a demo to showcase some prototype.</p>
 <hr />
-<p>And that's it.</p>
-<p>Now I just want to leave the discussion open. There is no right or wrong answer here since philosophers themselves don't even agree (this is hardly surprising, though, put N philosophers in a room and you will have N+1 opinions 😆).</p>
+<p>If you're like me, you just want to have a frontend to show today with the least possible throw-away effort. </p>
+<p>⭐ Take <a href="https://twitter.com/streamlit">@streamlit</a> for a spin today. I promise it'll be worth it.</p>
 <hr />
-<p>If you want to read this in a more "classic" format or bookmark it for later, check it out here: <a href="https://apiad.net/tweetstorms/philosophyfriday-mary-room/">https://apiad.net/tweetstorms/philosophyfriday-mary-room/</a></p>
+<p>As usual, if you like this topic, reply in this thread or @ me at any time. Feel free to ❤️ like and 🔁 retweet if you think someone else could benefit from knowing this stuff.</p>
+<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/technicaltuesday-automl">https://apiad.net/tweetstorms/technicaltuesday-automl</a></p>
+<hr />
+<p>Stay curious 🖖</p>
+<ul>
+<li>🔗 <a href="https://streamlit.io/">https://streamlit.io/</a></li>
+<li>📚 <a href="https://github.com/streamlit/streamlit">https://github.com/streamlit/streamlit</a></li>
+<li>🎥 <a href="https://www.youtube.com/channel/UC3LD42rjj-Owtxsa6PwGU5Q">https://www.youtube.com/channel/UC3LD42rjj-Owtxsa6PwGU5Q</a></li>
+</ul>
 <hr />
 <blockquote>
 <p>You can see this tweetstorm as originally posted in this Twitter thread</p>
 </blockquote>
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Hey, today is <a href="https://twitter.com/hashtag/PhilosophyFriday?src=hash&amp;ref_src=twsrc%5Etfw">#PhilosophyFriday</a> 🤔!<br><br>How about discussing some philosophical aspects of Computer Science?<br><br>Today I want to talk about Mary&#39;s Room 👇</p>&mdash; Alejandro Piad-Morffis (@AlejandroPiad) <a href="https://twitter.com/AlejandroPiad/status/1306970447494348805?ref_src=twsrc%5Etfw">September 18, 2020</a></blockquote>
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 
               
               
@@ -600,7 +611,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../theorythursday-algorithm-complexity/" title="Algorithm Complexity" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mindblowingmonday-languagemodels/" title="Language Models" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -609,25 +620,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Algorithm Complexity
+                Language Models
               </div>
             </div>
           </a>
         
-        
-          <a href="../mindblowingmonday-gan/" title="Generative Adversarial Networks" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Generative Adversarial Networks
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
         
       </nav>
     </div>
