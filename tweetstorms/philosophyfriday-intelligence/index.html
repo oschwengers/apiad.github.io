@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://apiad.net/tweetstorms/mindblowingmonday-gan/">
+        <link rel="canonical" href="https://apiad.net/tweetstorms/philosophyfriday-intelligence/">
       
       
       <link rel="shortcut icon" href="../../avatar.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Generative Adversarial Networks - @AlejandroPiad</title>
+        <title>Measuring Intelligence - @AlejandroPiad</title>
       
     
     
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Generative Adversarial Networks
+              Measuring Intelligence
             
           </span>
         </div>
@@ -427,18 +427,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Generative Adversarial Networks" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../mindblowingmonday-gan/" title="Generative Adversarial Networks" class="md-nav__link">
       Generative Adversarial Networks
     </a>
-    
   </li>
 
         
@@ -518,11 +511,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../philosophyfriday-intelligence/" title="Measuring Intelligence" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Measuring Intelligence" class="md-nav__link md-nav__link--active">
       Measuring Intelligence
     </a>
+    
   </li>
 
         
@@ -543,7 +543,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/apiad/edit/master/docs/tweetstorms/mindblowingmonday-gan.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/apiad/edit/master/docs/tweetstorms/philosophyfriday-intelligence.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -551,67 +551,62 @@
                   
                 
                 
-                  <h1>Generative Adversarial Networks</h1>
+                  <h1>Measuring Intelligence</h1>
                 
-                <p>Hey, today is #MindblowingMonday 🤯!</p>
-<p>A day to share with you amazing things from every corner of Computer Science.</p>
-<p>Today I want to talk about Generative Adversarial Networks 👇</p>
+                <p>Hey, today is #PhilosophyFriday 🤔!</p>
+<p>How about discussing some philosophical aspects of Computer Science?
+Today's question is:</p>
+<p>❓ How do you know someone (or something) else is intelligent? 🧵👇</p>
 <hr />
-<p>🍬 But let's begin with some eye candy. </p>
-<p>Take a look at this mind-blowing 2-minute video and, if you like it, then read on, I'll tell you a couple of things about it...</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9QuDh3W3lOY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!-- https://youtu.be/9QuDh3W3lOY -->
-
+<p>Before even asking the question of whether machines can or not ever become "intelligent", we need to ask ourselves: if they do, how would we know?</p>
+<p>The underlying question is, of course, what is intelligence? 👇</p>
 <hr />
-<p>Generative Adversarial Networks (GAN) have taken by surprise the machine learning world with their uncanny ability to generate hyper-realistic examples of human faces, cars, landscapes, and a lot of other stuff, as you just saw.</p>
-<p>Want to know how they work? 👇</p>
+<p>There are many ways to answer this question, and not a single one will be complete, of course. You have to consider psychology, neurobiology, even philosophy and ethics...</p>
+<p>From the computational point of the view, the most famous one is the Turing Test 👇</p>
 <hr />
-<p>There are many variants, but the core idea is to have 2️⃣ neural networks: </p>
+<p>It goes like this:</p>
 <ul>
-<li>⚙️ a generator network</li>
-<li>⚖️ a discriminator network</li>
+<li>A 👩human and a 💻computer take turns to chat with a 👩‍⚖️judge. </li>
+<li>👩‍⚖️ is free to ask anything to anyone, even ¿are you a computer? </li>
+<li>Both 👩 and 💻 are trying to convince the judge they are human.</li>
 </ul>
-<p>Both networks are connected in a sort of adversarial game, where each is trying to outperform the other.</p>
 <hr />
-<p>⚖️ The discriminator is a regular neural network whose job is to determine if a specific sample (say, an image of a face) is real or generated.</p>
-<p>This network's architecture depends on the classification task, as usual, e.g., lots of convolutions and pooling for images.</p>
+<p>👉 If 👩‍⚖️ fails to identify 👩 as the human, we are forced to recognize 💻 exhibits intelligence. </p>
+<p>💡 The intuition behind this test is that, even if we cannot precisely define what intelligence is, we can all recognize it in others.</p>
 <hr />
-<p>⚙️ The generator network is a decoder network, whose job is to transform an input of random values to whatever you want to generate.</p>
-<p>In images, for example, you'll have deconvolution layers and upsampling, i.e., the "reverse" of an image classification network.</p>
+<p>⚠️ There has been a lot of criticism to Turing's Test, invoking among other issues:</p>
+<p>1️⃣ The judge may be easily fooled with cheap tricks, unless well trained. There are plenty of examples of simple chatbots that appear human because we tend to anthropomorphise things. </p>
 <hr />
-<p>🎩 All the magic happens in the training.</p>
-<p>You train the discriminator by alternatively showing it real and generated images, and minimizing some classification loss (e.g., binary cross-entropy).</p>
+<p>2️⃣ Human intelligence might not be equivalent to general intelligence, so an intelligent computer (or an alien individual) might not be recognized as such, simply because it doesn't fit our narrow conception of intelligence.</p>
 <hr />
-<p>The generator is trained to try and "fool" the discriminator. But this is not easy, so the trick involves letting it "see" the discriminator loss function.</p>
-<p>💡 It's like showing you my brain while you perform a magic trick, so you can understand how I can be fooled best.</p>
+<p>3️⃣ And there is the issue of whether "simulating intelligence" is the same as "being intelligent". This is John Searle's argument, commonly known as the "Chinese Room", which takes a philosophical stance against the computational nature of intelligence.</p>
 <hr />
-<p>This is the basic idea, but the devil is in the details. Two common problems with GANs are:</p>
-<p>1️⃣ The discriminator learns much faster, so the generator never gets a chance to catch up.</p>
-<p>2️⃣ The generator gets complacent and just produces the same good examples over and over.</p>
+<p>🤔 The philosophical question we have to ask ourselves here is about the nature of intelligence. </p>
+<p>❓ Is intelligence a purely computational process, independent of the underlying hardware? Or does it depend on something inherent to biological brains?</p>
 <hr />
-<p>🤔 Finally, beyond the technical challenges, the possibility of suddenly creating very realistic content opens a can of worms of ethical issues such as disinformation.</p>
-<p>But technology itself is neither good nor bad, it is just a tool. It's on ourselves what we do with it.</p>
+<p>🧠 If you believe intelligence requires biological brains, then you are "biological naturalist", as John Searle. </p>
+<p>You don't think is possible for our computers to become truly intelligent irrespective of how powerful they become. At most they could simulate intelligence.</p>
 <hr />
-<p>As usual, if you like this topic, have any questions, or just want to discuss, reply in this thread or @ me any time. I'll be listening.</p>
-<p>This thread is available in plain format here, forever:
-<a href="https://apiad.net/tweetstorms/mindblowingmonday-gan/">https://apiad.net/tweetstorms/mindblowingmonday-gan/</a></p>
+<p>🤖 Otherwise, you are a "computationalist", or "functionalist", as Alan Turing. </p>
+<p>You believe that minds are "just" sufficiently powerful computers, so nothing in principle stops our computers from becoming truly intelligent. It's just a matter of time.</p>
 <hr />
-<p>Stay curious:</p>
+<p>👉 Whatever you chose to believe, some very smart people will agree with you.</p>
+<p>Either way, even if there are some examples of "winning the Turing Test", if all serious computer scientists agree on something, that is we are still far away from Strong AI.</p>
+<hr />
+<p>As usual, if you like this topic, reply in this thread or @ me at any time. Feel free to ❤️ like and 🔁 retweet if you think someone else could benefit from knowing this stuff.</p>
+<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/philosophyfriday-intelligence">https://apiad.net/tweetstorms/philosophyfriday-intelligence</a></p>
+<hr />
+<p>Stay curious 🖖:</p>
 <ul>
-<li>🎥 <a href="https://apiad.net/to/#gan-video">https://apiad.net/to/#gan-video</a></li>
-<li>🏫 <a href="https://deepgenerativemodels.github.io/">https://deepgenerativemodels.github.io/</a></li>
-<li>📘 <a href="https://www.manning.com/books/gans-in-action">https://www.manning.com/books/gans-in-action</a></li>
-<li>📃 <a href="https://arxiv.org/abs/1710.07035">https://arxiv.org/abs/1710.07035</a></li>
-<li>💻 <a href="https://github.com/nightrome/really-awesome-gan">https://github.com/nightrome/really-awesome-gan</a></li>
+<li>📚 <a href="https://www.csee.umbc.edu/courses/471/papers/turing.pdf">https://www.csee.umbc.edu/courses/471/papers/turing.pdf</a></li>
+<li>📃 <a href="https://en.wikipedia.org/wiki/Turing_test">https://en.wikipedia.org/wiki/Turing_test</a></li>
+<li>📃 <a href="https://iep.utm.edu/chineser/">https://iep.utm.edu/chineser/</a></li>
+<li>🎥 <a href="https://www.youtube.com/watch?v=Qbp3LJvcX38">https://www.youtube.com/watch?v=Qbp3LJvcX38</a></li>
 </ul>
 <hr />
 <blockquote>
 <p>You can see this tweetstorm as originally posted in this Twitter thread</p>
 </blockquote>
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p lang="en" dir="ltr">Hey, today is <a href="https://twitter.com/hashtag/MindblowingMonday?src=hash&amp;ref_src=twsrc%5Etfw">#MindblowingMonday</a> 🤯!<br><br>A day to share with you amazing things from every corner of Computer Science.<br><br>Today I want to talk about Generative Adversarial Networks 👇</p>&mdash; Alejandro Piad-Morffis (@AlejandroPiad) <a href="https://twitter.com/AlejandroPiad/status/1307928070884655105?ref_src=twsrc%5Etfw">September 21, 2020</a></blockquote>
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 
               
               
@@ -630,7 +625,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../philosophyfriday-mary-room/" title="Mary's Room" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../technicaltuesday-streamlit/" title="Streamlit" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -639,25 +634,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mary's Room
+                Streamlit
               </div>
             </div>
           </a>
         
-        
-          <a href="../technicaltuesday-automl/" title="AutoML" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                AutoML
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
         
       </nav>
     </div>
