@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="https://apiad.net/tweetstorms/theorythursday-pnp/">
+        <link rel="canonical" href="https://apiad.net/tweetstorms/philosophyfriday-aisafety/">
       
       
       <link rel="shortcut icon" href="../../avatar.png">
@@ -17,7 +17,7 @@
     
     
       
-        <title>P vs NP - @AlejandroPiad</title>
+        <title>Philosophyfriday aisafety - @AlejandroPiad</title>
       
     
     
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              P vs NP
+              Philosophyfriday aisafety
             
           </span>
         </div>
@@ -148,16 +148,14 @@
         
           
 
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
         ⭐ Home
       </a>
     
@@ -195,7 +193,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../" class="md-tabs__link md-tabs__link--active">
+        <a href="../" class="md-tabs__link">
           🗨️ Tweetstorms
         </a>
       
@@ -380,12 +378,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       🗨️ Tweetstorms
@@ -565,12 +561,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-5" type="checkbox" id="nav-4-5">
     
     <label class="md-nav__link" for="nav-4-5">
       🧐 Theory Thursday
@@ -612,18 +606,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="P vs NP" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../theorythursday-pnp/" title="P vs NP" class="md-nav__link">
       P vs NP
     </a>
-    
   </li>
 
         
@@ -739,82 +726,29 @@
                   
                 
                 
-                  <h1>P vs NP</h1>
+                  <h1>Philosophyfriday aisafety</h1>
                 
-                <p>Today is #TheoryThursday 🧐!</p>
-<p>I want to talk about what is, possibly, the most important question in all of Computer Science: Does P equal NP?</p>
-<p>If you have heard of this and want to learn a bit more, read on... 🧵👇</p>
+                <p>Today is #PhilosophyFriday 🤔!</p>
+<p>I want to talk about the ethical implications of using AI, but this is a HUGE topic.
+So today I'll focus on one specific issue:</p>
+<p>❓ Who do you blame when the AI fails? 🧵👇</p>
 <hr />
-<p>Computer Science is all about finding clever ways to solve difficult problems. </p>
-<p>We have found clever algorithms for a bunch of them: sorting stuff, finding shortest paths, solving equations, simulating physics...</p>
-<p>But some problems seem to be way too hard 👇</p>
+<p>We are surrounded by narrow artificial intelligence systems all over. Our news feeds, video and music recommendations, credit score and many other decisions are being taken by AI-powered computer programs.</p>
+<p>💣 Inevitably, they fail, like all software.</p>
 <hr />
-<p>One example is the Travelling Salesman problem.</p>
-<p>❓ Find a cycle starting in your home city to visit all major cities in your country and return home with the least fuel cost.</p>
-<p>This is the kind of problem we expect computers to solve easily, right? That's what computers are for!</p>
+<p>Some of the most public failures recently have happened with self-driven cars. </p>
+<p>In a few cases, this has resulted in severe damage to the driver and/or others around it.</p>
+<p>❓ The question is, who do you blame?</p>
 <hr />
-<p>🙈 Well, very smart people have tried, and no one has come up with an algorithm that is <em>always</em> better than simply trying all possible cycles.</p>
-<p>The problem is that the number of cycles grows exponentially faster than the number of cities!</p>
-<hr />
-<p>Let's make it even easier, what about if I simply ask: </p>
-<p>❓ Is it possible to visit all cities spending less than X dollars in fuel?</p>
-<p>🙈 No one still knows an algorithm to answer that question <em>precisely</em> for any value of X without trying all cycles, which again is exponential.</p>
-<hr />
-<p>😬 So, are we simply dumb, or is this problem so complex that it is impossible to find a clever algorithm to solve it, <em>in the general case</em>?</p>
-<p>This is the root of possibly the most important question in all of Computer Science: P vs NP.</p>
-<hr />
-<p>Answering this question is way harder than it seems. You see, most questions in CS are about objects: how to sort, how to compare, how to process...</p>
-<p>But this is a meta-question: </p>
-<p>❓ Are there questions about objects that are intrinsically very hard to solve?</p>
-<hr />
-<p>Stephen Cook tried to answer this question in the early days of Computer Science. He came up with the following definitions:</p>
-<p>Suppose we have a question of the form: </p>
-<p>❓ Is there an object X with a given property Q?</p>
-<p>👉 We want to define how hard is this question to answer.</p>
-<hr />
-<p>An example of an easy question of this type is the following:</p>
-<p>❓ Given an array of N elements, is there an element smaller than X?</p>
-<p>Answering this question is easy. Look at each element, one by one, and compare it with X. It takes at most N steps, for any possible array.</p>
-<hr />
-<p>This is an example of a problem in P. </p>
-<p>🔑 P here means "Polynomial-Time Complexity". </p>
-<p>Intuitively, a problem is in P if there is an algorithm to <em>compute</em> a correct answer in polynomial time. </p>
-<hr />
-<p>Now back to the Travelling Salesman, suppose I give you an answer: </p>
-<p>👉 Yes, here, this is a cycle with cost less than X.</p>
-<p>How can you verify that answer is correct? You just add the costs of all edges in the cycle. It takes again N steps.</p>
-<hr />
-<p>This is an example of a problem in NP.</p>
-<p>🔑 NP here means "Non-deterministic Polynomial-Time Complexity".</p>
-<p>Intuitively, a problem is in NP if there is an algorithm to <em>verify</em> a correct answer in polynomial time.</p>
-<hr />
-<p>P problems are easy to solve. NP problems, we don't know yet, but at least they are easy to verify. That's the key idea. </p>
-<p>⚠️ Note that P problems are also NP.</p>
-<p>Now, the P vs NP question, formally, is this:</p>
-<p>❓ Are there problems in NP that are not in P?</p>
-<hr />
-<p>P vs NP is basically asking if there are problems that are inherently harder to answer than to verify, independently of how smart we become in the future.</p>
-<p>🤔 Think about what this means for a second, and ask yourself what's your intuition about it.</p>
-<hr />
-<p>What's the right answer? We still don't know, but most computer scientists believe that P is not equal to NP. </p>
-<p>The reasons are mostly philosophical but there is also evidence that, if P were equal to NP, a lot of weird things would happen.</p>
-<hr />
-<p>This question is at the core of Computer Science because it talks about the nature of computation and its inherent limits, regardless of technological improvements.</p>
-<p>We'll end here for now, but there is so much left to talk about (like NP-completeness). So stick around 👋...</p>
+<p>The easy answer is to blame the programmers, or in general, the company that produced the vehicle. But this answer gets trickier the more advanced the AI becomes.</p>
 <hr />
 <p>As usual, if you like this topic, reply in this thread or @ me at any time. Feel free to ❤️ like and 🔁 retweet if you think someone else could benefit from knowing this stuff.</p>
-<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/theorythursday-pnp">https://apiad.net/tweetstorms/theorythursday-pnp</a></p>
+<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/philosophyfriday-aisafety">https://apiad.net/tweetstorms/philosophyfriday-aisafety</a></p>
 <hr />
 <p>Stay curious 🖖:</p>
-<ul>
-<li>📚 <a href="https://dl.acm.org/doi/10.1145/800157.805047">https://dl.acm.org/doi/10.1145/800157.805047</a></li>
-<li>📚 <a href="https://dl.acm.org/doi/10.1145/1562164.1562186">https://dl.acm.org/doi/10.1145/1562164.1562186</a></li>
-<li>📄 <a href="https://en.wikipedia.org/wiki/P_versus_NP_problem">https://en.wikipedia.org/wiki/P_versus_NP_problem</a></li>
-<li>🎥 <a href="https://youtu.be/dJUEkjxylBw">https://youtu.be/dJUEkjxylBw</a></li>
-</ul>
 <hr />
 <blockquote>
-<p>🗨️ You can see this tweetstorm as originally posted in <a href="https://twitter.com/AlejandroPiad/status/1316706290345873408">this Twitter thread</a>.</p>
+<p>🗨️ You can see this tweetstorm as originally posted in <a href="">this Twitter thread</a>.</p>
 </blockquote>
                 
               
@@ -830,41 +764,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../theorythursday-cfg/" title="Context-Free Grammars" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Context-Free Grammars
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../philosophyfriday-mary-room/" title="Mary's Room" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Mary's Room
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
