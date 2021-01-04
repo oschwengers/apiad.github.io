@@ -160,13 +160,16 @@
     <ul class="md-tabs__list">
       
         
-  <li class="md-tabs__item">
-    
-      <a href="../.." class="md-tabs__link">
-        ⭐ Home
-      </a>
-    
-  </li>
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." class="md-tabs__link">
+          ⭐ Home
+        </a>
+      
+    </li>
+  
 
       
         
@@ -188,7 +191,7 @@
     <li class="md-tabs__item">
       
         <a href="../" class="md-tabs__link md-tabs__link--active">
-          🗞️ Essays
+          ✏️ Essays
         </a>
       
     </li>
@@ -250,10 +253,96 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../.." title="⭐ Home" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
       ⭐ Home
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="⭐ Home" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        ⭐ Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="🖖 Hello World!" class="md-nav__link">
+      🖖 Hello World!
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../at/twitter" title="🗨️ Twitter" class="md-nav__link">
+      🗨️ Twitter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../at/linkedin" title="💼 LinkedIn" class="md-nav__link">
+      💼 LinkedIn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../at/reddit" title="😝 Reddit" class="md-nav__link">
+      😝 Reddit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../at/telegram" title="📱 Telegram" class="md-nav__link">
+      📱 Telegram
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../at/youtube" title="🎥 Youtube" class="md-nav__link">
+      🎥 Youtube
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -319,13 +408,13 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
-      🗞️ Essays
+      ✏️ Essays
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="🗞️ Essays" data-md-level="1">
+    <nav class="md-nav" aria-label="✏️ Essays" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon"></span>
-        🗞️ Essays
+        ✏️ Essays
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -503,6 +592,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../opinions/" title="Opinions" class="md-nav__link">
+      Opinions
+    </a>
   </li>
 
         
@@ -1000,6 +1101,7 @@
 <blockquote>
 <p>⚠️ This is a rant about some things I think are wrong in Academia and some ideas about how to improve this situation. I mostly focus on Artificial Intelligence because that's my field, but I think most of these ideas apply everywhere. I'm not trying to discredit or criticize any individual or organization, but rather raise some questions that I think all of us scientists, as a community, should attend. I declare myself as guilty of all the sins I describe.</p>
 </blockquote>
+<hr />
 <h2 id="the-setup">🗞️ The setup<a class="headerlink" href="#the-setup" title="Permanent link">&para;</a></h2>
 <p>If you've ever tried Academia you have surely been in this situation. You come up with a good idea, do some experiments, write a paper about it and... that's when the real work starts. Whether you send that paper to a conference or a journal, you'll get 2 to 5 reviewers to critic your paper, ask you for improvements and decide if your work is good enough for publication. If it's a conference, you'll usually either get accepted or rejected, but if it's a journal, you might get a second chance to improve and resubmit. This process is called <strong>peer review</strong>, and it's one of the fundamental pillars of Science.</p>
 <p>Don't get me wrong, peer review is extremely important. You see, Science is a social process. Yes, you can follow the scientific method and come up with a Frankenstein monster all by yourself on a private island, and you would be doing science (without capital "s"). It is only when those results are scrutinized, retested, and confirmed by additional researchers, that they become part of the continuous and incremental body of accumulated knowledge that we call Science. </p>
@@ -1007,7 +1109,7 @@
 <p>Since peer review is such an important concept in Science, we have built all our social scientific processes around it. We set deadlines, ratings, whole systems to formalize and organize what peer review means. We have double-blind and single-blind peer review to guarantee that authors and reviewers don't take revenge on each other. We have evaluation forms and protocols, and we have workshops and workshops about peer review.</p>
 <p>And yet, time and time again, experiments have shown that reviews are significantly inconsistent. If you randomly redistribute the papers on a top AI conference, a large part of the accepted papers get rejected, and vice-versa. However, I do not take this as evidence that scientists are lousy reviewers. Not even close. Scientists are pretty good at being objectively critical of other's and our work, we do that every single day! I think the problem lies in the system and the incentives built around it, mostly for the benefit of the big players in the Academic world, the publishers.</p>
 <h2 id="the-symptoms">🤕 The symptoms<a class="headerlink" href="#the-symptoms" title="Permanent link">&para;</a></h2>
-<p>Every time you take a metric and turn it into an objective, it ceases to be a useful metric. This has happened in Science with the concept of <em>publishing a paper</em>. Publishing a paper is the main mechanism for socializing research. A research paper usually describes some scientific hypotheses in as clear terms as possible, a protocol to test (i.e., falsify) those hypotheses, and an honest and critical discussion of results and their implications. By reading a paper, fellow scientists can come up with additional hypotheses or ideas, and build on top of previous work. And every time you use someone else's ideas as part of your own, you are supposed to include a citation. This is what Newton was referring to when he said he had "stand on the should of giants". </p>
+<p>Every time you take a metric and turn it into an objective, it ceases to be a useful metric. This has happened in Science with the concept of <em>publishing a paper</em>. Publishing a paper is the main mechanism for socializing research. A research paper usually describes some scientific hypotheses in as clear terms as possible, a protocol to test (i.e., falsify) those hypotheses, and an honest and critical discussion of results and their implications. By reading a paper, fellow scientists can come up with additional hypotheses or ideas, and build on top of previous work. And every time you use someone else's ideas as part of your own, you are supposed to include a citation. This is what Newton was referring to when he said he had "stand on the shoulder of giants". </p>
 <p>In time, the most significant scientific discoveries should get a large number of citations, because everyone building on top of your ideas would cite you. Hence, a large number of citations is seen as a sign of scientific achievement, and that is often taken as the <em>One Metric of Academic Success</em>. See the problem here?</p>
 <p>Once citations become a distinction mark, everyone tries to maximize them. A lot of strategies begin to arise, like publishing lots of low-effort papers instead of fewer and better ones, and working only on the most fashionable topics. Since to get cited you have to get published first, publishers become the gatekeepers. A feedback loop starts to build in which publishers try to be as exclusive as possible to attract better papers, since more citations imply more readers which implies more subscriptions; and authors try to aim for the most exclusive publishers since, otherwise, they won't get enough citations. </p>
 <p>In this dynamic, two very harmful things start to happen. </p>
@@ -1157,13 +1259,13 @@
           </a>
         
         
-          <a href="../../tweetstorms/" title="❓ About tweetstorms" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../opinions/" title="Opinions" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                ❓ About tweetstorms
+                Opinions
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
