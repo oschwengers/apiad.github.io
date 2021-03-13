@@ -977,7 +977,7 @@
                 
                   <h1>Posting from trello</h1>
                 
-                <!--TWITTER date=2021-03-13-12 label=News-->
+                <!--TWITTER date=2021-03-13-11 label=News-->
 
 <p>I've been struggling for some time with Twitter scheduling.</p>
 <p>There are great apps out there, like @FeedHive_io or @tweetastic_app, precisely for this!</p>
@@ -988,7 +988,7 @@
 ♦️ I hate to be forcibly online for authoring tweets.
 ♦️ I hate to have my content stored primarily in someone else's database.</p>
 <hr />
-<p>👍 A direct upside of this stubbornness is that all my Twitter threads are safely stored in a git repository and you can always read them in plain text format at <apiad.net>.</p>
+<p>👍 A direct upside of this stubbornness is that all my Twitter threads are safely stored in git and you can always read them at <apiad.net>.</p>
 <p>👎 The biggest downside is, of course, that I'm just inventing an uglier and clunkier wheel. But hey, that's the fun part of it!</p>
 <hr />
 <p>Getting from Markdown to Twitter is quite simple. </p>
@@ -998,9 +998,8 @@
 <p>👉 For this, I'm using Trello. I set up a board with three lists (pool, scheduled, published), and used the Trello API to create cards for each of my Markdown files.</p>
 <p>Each card has a due date that defines when will it be posted.</p>
 <hr />
-<p>Everything is tied up with a simple script that collects all the Markdown files, creates the suitable cards, and posts the Markdown contents that correspond to cards with a past due date. </p>
-<hr />
-<p>Basically, I repurposed Trello's UI for moving around</p>
+<p>Everything is tied up with a simple cron script that collects all the Markdown files, creates the suitable cards, and posts the Markdown contents that correspond to cards with a past due date. </p>
+<p>Here it is: <a href="https://github.com/apiad/apiad/blob/master/scripts/post.py">https://github.com/apiad/apiad/blob/master/scripts/post.py</a></p>
 <hr />
 <p>What's left is getting image and video attachments working.</p>
 <p>I still haven't completely figured it out but I think I'll solve it by inspecting the Markdown line by line and doing some regex replacement. Ugly, I know, but hey, I didn't promise this was gonna be clean 😛!</p>
