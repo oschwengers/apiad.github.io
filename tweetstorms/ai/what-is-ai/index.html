@@ -1094,12 +1094,12 @@
 <p>Now let's jump up another level of abstraction. 👇</p>
 <hr />
 <p>For example, finding a route from A to B in a city, a set of moves to solve a Rubik cube, and a proof for a logic theorem, are three different problem classes.</p>
-<p>But they all share a common theme, if you will: They're all about finding paths in a graph.</p>
+<p>But they all share a similar underlying structure, a common theme if you will. 👇</p>
 <hr />
 <p>You can see these three problem classes as instances of a meta-class: finding an optimal path in a graph of states.</p>
-<p>And we can ask if there is a general way to solve any problem class of this nature without knowing many more details about the class.</p>
+<p>And we can ask if there is a general way to solve any problem class of this nature without knowing many more details about a specific problem class.</p>
 <hr />
-<p>Similarly, packing a bunch of boxes in a small space, organizing a schedule with no conflicts, and safely distributing N queens on NxN chess board, are all instances of a meta-class called a constraint satisfaction problem.</p>
+<p>Similarly, packing boxes in a small space, organizing a schedule with no conflicts, and safely distributing N queens on NxN chess board, are all instances of a problem meta-class: assign values to a set of variables ensuring that some constraints aren't violated.</p>
 <hr />
 <p>💠 This are <em>Level-2</em> problems.</p>
 <p>Problems that generalize a very broad set of seemingly disparate problem classes in an abstract definition.</p>
@@ -1108,23 +1108,21 @@
 <p>In AI, we're concerned with <em>Level-2</em> problems.</p>
 <p>We ask not whether we can solve a problem class, but whether we can solve an infinitely large family of problem classes that share a common abstract structure.</p>
 <hr />
-<p>💡 The questions of AI are about which strategies for problem-solving are general enough that can be applied to a broad range of problem classes, even problem classes that we didn't think of at first.</p>
+<p>💡 The questions of AI are about which strategies for problem-solving are general enough that can be applied to a broad range of problem classes, potentially even to any problem class we can think of.</p>
 <hr />
-<p>✏️ Side note: by virtue of their very abstract nature, most if not all Level-2 problems in AI contain NP-Complete and/or NP-Hard problem classes. Hence, almost all general-purpose solutions in AI involve some sort of heuristic.</p>
+<p>✏️ Side note: by virtue of their very abstract nature, most if not all Level-2 problems in AI contain NP-Complete and/or NP-Hard problem classes. Hence, almost all general-purpose solutions in AI involve some sort of heuristic search.</p>
 <hr />
 <p>Do you see why is it called "Artificial Intelligence" now?</p>
 <p>We could have called it something as boring as "Automatic General-Purpose Problem-Solving", but that name isn't as catchy as Artificial Intelligence, of course. </p>
 <hr />
-<p>One thing that we avoided is trying to define <em>intelligence</em>.</p>
-<p>We could be interested in asking precisely "what is the nature of intelligence".</p>
-<p>However, it is very hard to answer that question without unconsciously resorting to antropomorphic biases.</p>
+<p>Notice that we avoided trying to define <em>intelligence</em> altogether. And not because this question is not important.</p>
+<p>However, it is very hard to try and answer what is intelligence without unconsciously resorting to antropomorphic biases.</p>
 <hr />
-<p>❓ Is our definition any better?</p>
-<p>To be fair, we still have a very subjective and fuzzy line here between Level-1 and Level-2 problems, and some things that seem AI for some people will seem "just regular CS" for others. </p>
+<p>Our definition isn't perfect though, because we rely on a fuzzy distinction between Level-1 and Level-2 problems, and some things that seem AI for some people will seem "just regular CS" for others.</p>
 <hr />
-<p>However, that's OK. We don't need to have a clear-cut definition in order to advance the field.</p>
-<p>We just need to agree on a shared vision.</p>
-<p>That vision, in AI, is finding which are the most general types of problem-solving strategies. Those strategies we could call "intelligent".</p>
+<p>However, that's OK. We don't need to have a clear-cut definition in order to advance the field. We just need to agree on a shared vision.</p>
+<p>That vision, in AI, is finding the most general types of problem-solving strategies. </p>
+<p>Those are the strategies we would call "intelligent".</p>
 <hr />
 <p>And that's it for now. Next time, we'll examine some common meta-classes, or Level-2 problems, that AI can help solving.</p>
 <p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/ai/what-is-ai/">https://apiad.net/tweetstorms/ai/what-is-ai/</a></p>
