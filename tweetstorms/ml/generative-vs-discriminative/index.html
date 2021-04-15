@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://apiad.net/tweetstorms/wisdomwednesday/designthinking/">
+        <link rel="canonical" href="https://apiad.net/tweetstorms/ml/generative-vs-discriminative/">
       
       <link rel="shortcut icon" href="../../../avatar.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
     
     
       
-        <title>Design Thinking - @AlejandroPiad</title>
+        <title>Generative vs Discriminative - @AlejandroPiad</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Design Thinking
+              Generative vs Discriminative
             
           </span>
         </div>
@@ -661,14 +661,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" type="checkbox" id="__nav_5_4" >
       
       <label class="md-nav__link" for="__nav_5_4">
         🤩 Wisdom Wednesday
@@ -686,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../why/" class="md-nav__link">
+      <a href="../../wisdomwednesday/why/" class="md-nav__link">
         Start with Why
       </a>
     </li>
@@ -696,18 +694,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../wisdomwednesday/designthinking/" class="md-nav__link">
         Design Thinking
       </a>
-      
     </li>
   
 
@@ -717,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../teams/" class="md-nav__link">
+      <a href="../../wisdomwednesday/teams/" class="md-nav__link">
         Team Building
       </a>
     </li>
@@ -931,12 +922,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" type="checkbox" id="__nav_5_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" type="checkbox" id="__nav_5_7" checked>
       
       <label class="md-nav__link" for="__nav_5_7">
         🤖 Foundations of ML
@@ -954,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/what-is/" class="md-nav__link">
+      <a href="../what-is/" class="md-nav__link">
         What is Machine Learning?
       </a>
     </li>
@@ -966,7 +959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/types-of-learning/" class="md-nav__link">
+      <a href="../types-of-learning/" class="md-nav__link">
         Types of Learning
       </a>
     </li>
@@ -978,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/models/" class="md-nav__link">
+      <a href="../models/" class="md-nav__link">
         Modeling Paradigms
       </a>
     </li>
@@ -990,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/metrics/" class="md-nav__link">
+      <a href="../metrics/" class="md-nav__link">
         Metrics
       </a>
     </li>
@@ -1000,11 +993,18 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../ml/generative-vs-discriminative/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Generative vs Discriminative
       </a>
+      
     </li>
   
 
@@ -1073,124 +1073,93 @@
               
                 
                 
-                  <h1>Design Thinking</h1>
+                  <h1>Generative vs Discriminative</h1>
                 
-                <p>Today is #WisdomWednesday 🤩!</p>
-<p>Have you ever had an amazing idea, built a product around it, and found out no one wanted it? I have, plenty of times.</p>
-<p>Part of the issue is we started from the solution, but there is a better way.</p>
-<p>⭐ This is a thread on Design Thinking 🧵👇</p>
+                <p>This is a Twitter series on #FoundationsOfML. </p>
+<p>❓ Today let's look at two fundamental modelling paradigms that are used throughout the whole ML landscape.</p>
+<p>Let's dive into Generative vs Discriminative models... </p>
+<p>👇🧵 1/20</p>
 <hr />
-<p>Creating a product, whether a software, a physical thing, or a service, is all about solving a problem.</p>
-<p>👉 Someone has a problem, and you offer a solution.</p>
-<p>But we often start with a solution, in the hope that someone wants it, and we end up solving an inexisting problem.</p>
+<p>Say we want to learn to recognize 🐶dogs and 😺cats.</p>
+<p>Let's not worry about input format right now and instead think in terms of abstract features, like, does it have pointy ears?</p>
+<p>There are at least two ways in which we can do it.</p>
+<p>👇 2/20</p>
 <hr />
-<p>This happens because, in real life, problems are not cleanly written in some kanban board. </p>
-<p>⚠️ We often know that something is not right, and we think we know how to solve it but, actually, we don't even have a clear idea of what's wrong.</p>
-<p>Enter Design Thinking 👇</p>
+<p>1️⃣ We can try to learn what is a dog and what is a cat, <em>independently</em>. </p>
+<p>That is, which are the fundamental characteristics that best <em>define</em> each one of those classes.</p>
+<p>👇 3/20</p>
 <hr />
-<p>Everything stems from these principles:</p>
-<ul>
-<li>1️⃣ The problem is never well defined.</li>
-<li>2️⃣ The problem and the solution must co-evolve together.</li>
-<li>3️⃣ The solution is never completed.</li>
-</ul>
-<p>And one key idea:</p>
-<p>⭐ The human being is the most important element of the solution.</p>
+<p>🐕 For example, we can learn that dogs have (generally) four legs, large noses, cute eyes, round ears, fur, and long tongues.</p>
+<p>🐈 Similarly, we can learn that cats have (generally) four legs, small noses, sneaky eyes, pointy ears, fur, and short tongues.</p>
+<p>👇 4/20</p>
 <hr />
-<p>Based on these principles, the process itself is a continuous cycle of five steps:</p>
-<ul>
-<li>🔭 Understand</li>
-<li>📝 Define</li>
-<li>💡 Ideate</li>
-<li>🛠️ Prototype</li>
-<li>⚗️ Test</li>
-</ul>
+<p>To classify a new animal 😼 we can then look at its features, and say: </p>
+<p>❓ If this is a dog, what are the odds of seeing this kind of fur, this kind of legs, this kind of ears, ...</p>
+<p>👇 5/20</p>
 <hr />
-<p>🔭 You start by observing people, your potential users or clients. Ask yourself:</p>
-<ul>
-<li>❓ How are they solving the problem now?</li>
-<li>❓ What is their critical pain in doing so?</li>
-<li>❓ Why is that happening?</li>
-</ul>
-<p>🤔 These questions sound familiar to you?</p>
+<p>Likewise, we can ask: </p>
+<p>❓ If this is a cat, what are the odds of seeing this kind of fur, this kind of legs, this kind of ears, ...</p>
+<p>Then we compare how surprised we are between seeing a 🐕 and 🐈 with these specific features.</p>
+<p>👇 6/20</p>
 <hr />
-<p>Useful tools and practices:</p>
-<ul>
-<li>👉 Observation. Just watch people in their routine and take notes.</li>
-<li>👉 Interviews, but not with standardized questionnaires; instead, talk openly with people, and listen.</li>
-<li>👉 Ask "why" at least 5 times to get to the core of the problems. </li>
-</ul>
+<p>🔶 This is a Generative Model.</p>
+<p>These models learn what are the fundamental features of a given class. Formally, these models estimate what is the probability P(f1,f2,...|C) of observing these specific features f1, f2, ..., in any given class C.</p>
+<p>👇 7/20</p>
 <hr />
-<p>📝 Then you have to clearly define <em>one problem</em> to solve. Focus is key here.</p>
-<p>A good definition is actionable. It describes a situation that is easy to validate when it has been solved.</p>
-<p>🔬 Go deep, you don't want to solve the superficial problem but the underlying cause.</p>
+<p>The reason they are called <em>Generative</em> is that they try to learn explicitly how an example of a given class is <em>made</em>.</p>
+<p>💡 You can often use these models to generate random examples of each class, by sampling from P(fi...|C).</p>
+<p>👇 8/20</p>
 <hr />
-<p>Here are some techniques:</p>
-<ul>
-<li>👉 Use a board (physical or virtual) and put a note for every potential insight or problem.</li>
-<li>👉 Make clusters, group similar problems and insights together.</li>
-<li>👉 Select (or vote on) one cluster and write a clear definition of the problem it represents.</li>
-</ul>
+<p>2️⃣ Alternatively, we can try to learn directly what makes a dog <em>different</em> from a cat.</p>
+<p>That is, which are the fundamental characteristics that best <em>discriminate</em> between those classes.</p>
+<p>👇 9/20</p>
 <hr />
-<p>💡 Now it's the fun part, it's time to come up with ideas!</p>
-<p>This is the creative part of the process, so don't be afraid to have <em>too many</em> ideas. This is a rare case of quantity before quality.</p>
-<p>🌩️ The best tool is a brainstorming session.</p>
+<p>We can learn that the larger the nose or the tongue the more likely to be a 🐕, or that the pointier the ears and the sneakier the eyes, the more likely it is to be a 🐈.</p>
+<p>And we do not care, for example, about the number of legs or the fur.</p>
+<p>👇 10/20</p>
 <hr />
-<p>A good brainstorm has these qualities:</p>
-<ul>
-<li>👉 Only one person talks at a time, no interruption allowed.</li>
-<li>👉 Set a maximum time for each intervention, around 1 minute.</li>
-<li>👉 No idea is too crazy or impossible.</li>
-<li>👉 Build on top of others: instead of "no, because", just say "yes, and".</li>
-</ul>
+<p>To classify, we look at the features and say: </p>
+<p>❓ Given these ears, and this nose, and these eyes, how likely is this to be a dog or a cat?</p>
+<p>We compare the two results and answer the one we are most confident about.</p>
+<p>👇 11/20</p>
 <hr />
-<p>🛠️ Next, it's time to finally build something! </p>
-<p>Select one, or a few related ideas, and turn it into a prototype. You want to build a Minimum Viable Product (MVP), the smallest piece of functionality that lets you learn something new.</p>
-<p>🔥 Don't overengineer.</p>
+<p>🔶 This is a Discriminative Model.</p>
+<p>These models learn which are the features that separate different classes. Formally, they are estimating explicitly what is the probability P(C|f1,f2,...) of seeing class C given that we observe the features f1, f2, ...</p>
+<p>👇 12/20</p>
 <hr />
-<p>You know you are overengineering when:</p>
-<ul>
-<li>👉 You care about how it looks (unless that's the problem).</li>
-<li>👉 You care about how fast it is (unless that's the problem).</li>
-<li>👉 You feel sad if you have to scrap that prototype.</li>
-</ul>
+<p>The reason they're called <em>Discriminative</em> is that they try to learn what makes a class <em>different</em> from all others.</p>
+<p>💡 You can often use these models to compute feature importance by looking at which features best separate different classes.</p>
+<p>👇 13/20</p>
 <hr />
-<p>⚗️ Finally, you have to test that prototype.</p>
-<p>If your problem was clearly defined, you should know what a successful evaluation looks like. </p>
-<p>💬 This is not about software testing. Test the prototype with real people.</p>
+<p>🔹A classic example of a generative model is Naive Bayes.</p>
+<p>🔹A classic example of a discriminative model is Logistic Regression (and most neural networks).</p>
+<p>👇 14/20</p>
 <hr />
-<p>Things to keep in mind:</p>
-<ul>
-<li>👉 Shut up and watch, people should discover how the thing works by themselves.</li>
-<li>👉 Test with a variety of different profiles.</li>
-<li>👉 Write down every complaint you get, but don't mind about the proposed solutions.</li>
-</ul>
+<p>❓ Does this difference matter?</p>
+<p>If you mostly care about performance, then no, there is no intrinsically best modelling paradigm, and only experimentation can tell you what to use.</p>
+<p>However, depending on how you want to use the model, it can matter.</p>
+<p>👇 15/20</p>
 <hr />
-<p>Once you reach this phase, you should have an answer to the question "is this problem solved?", which probably is:</p>
-<p>🔸 Somewhat, but the problem was not so well-defined as you thought.</p>
-<p>That great! You just completed one cycle and learnt something new. </p>
-<p>🔁 Now start over.</p>
+<p>Discriminative models are better at answering why (they think) this is the correct answer than generative models. </p>
+<p>They will focus on the important features for the task, and disregard anything that doesn't help them to score better at answering.</p>
+<p>👇 16/20</p>
 <hr />
-<p>⚡ Design Thinking applies not only to software but to any creative process. </p>
-<p>Whether you are planning an event, writing a book, building a physical gadget, or launching a service, you can use this strategy.</p>
+<p>Discriminative models learn not what we want, but what's useful, which can often be something completely off-track, like spurious correlations or harmful biases in the training set.</p>
+<p>👇 17/20</p>
 <hr />
-<p>This is not a bureaucratic methodology you have to follow, nor is a silver bullet. The key idea is this:</p>
-<p>🔑 You're trying to solve someone's problem, so you have to understand them first.</p>
-<p>Everything else is just tools to help you do that.</p>
+<p>Generative models often encode stronger inductive biases because they represent a hypothesis (ours) about how the data is created. </p>
+<p>This can make them more robust and controllable but if that hypothesis is too far from reality they may not learn anything useful.</p>
+<p>👇 18/20</p>
 <hr />
-<p>As usual, if you like this topic, reply in this thread or @ me at any time. Feel free to ❤️ like and 🔁 retweet if you think someone else could benefit from knowing this stuff.</p>
-<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/wisdomwednesday-designthinking">https://apiad.net/tweetstorms/wisdomwednesday-designthinking</a></p>
+<p>⭐ As usual, there is no silver bullet. You need to ask the right questions and be mindful of your assumptions.</p>
+<p>⚡ And always test your hypotheses!</p>
+<p>👇 19/20</p>
 <hr />
-<p>Stay curious 🖖</p>
-<ul>
-<li>🔗 <a href="https://www.ideo.com/post/design-thinking">https://www.ideo.com/post/design-thinking</a></li>
-<li>📄 <a href="https://en.wikipedia.org/wiki/Design_thinking">https://en.wikipedia.org/wiki/Design_thinking</a></li>
-<li>🎥 <a href="https://youtu.be/UAinLaT42xY">https://youtu.be/UAinLaT42xY</a></li>
-</ul>
-<hr />
-<blockquote>
-<p>🗨️ You can see this tweetstorm as originally posted in <a href="https://twitter.com/AlejandroPiad/status/1316385294757789697">this Twitter thread</a>.</p>
-</blockquote>
+<p>🔖 You can read this thread online at <a href="https://apiad.net/tweetstorms/ml/generative-vs-discriminative">https://apiad.net/tweetstorms/ml/generative-vs-discriminative</a>.</p>
+<p>❤️ If you liked this thread, please consider retweeting, following, and liking it, if you think I've earned it. And make sure to read the whole #FoundationsOfML series. It starts here:</p>
+<p>https://twitter.com/AlejandroPiad/status/1348840452670291969</p>
+                
+                  
                 
               
               
@@ -1208,7 +1177,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../why/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../metrics/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1217,19 +1186,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Start with Why
+              Metrics
             </div>
           </div>
         </a>
       
       
-        <a href="../teams/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../../ai/what-is-ai/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Team Building
+              What is AI?
             </div>
           </div>
           <div class="md-footer__button md-icon">
