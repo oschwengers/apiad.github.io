@@ -711,6 +711,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wisdomwednesday/automate/" class="md-nav__link">
+        Automate
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -1072,9 +1084,9 @@
                 
                   <h1>Generative vs Discriminative</h1>
                 
-                <p>This is a Twitter series on #FoundationsOfML. </p>
+                <p>This is a Twitter series on #FoundationsOfML.</p>
 <p>❓ Today let's look at two fundamental modelling paradigms that are used throughout the whole ML landscape.</p>
-<p>Let's dive into Generative vs Discriminative models... </p>
+<p>Let's dive into Generative vs Discriminative models...</p>
 <p>👇🧵 1/20</p>
 <hr />
 <p>Say we want to learn to recognize 🐶dogs and 😺cats.</p>
@@ -1082,7 +1094,7 @@
 <p>There are at least two ways in which we can do it.</p>
 <p>👇 2/20</p>
 <hr />
-<p>1️⃣ We can try to learn what is a dog and what is a cat, <em>independently</em>. </p>
+<p>1️⃣ We can try to learn what is a dog and what is a cat, <em>independently</em>.</p>
 <p>That is, which are the fundamental characteristics that best <em>define</em> each one of those classes.</p>
 <p>👇 3/20</p>
 <hr />
@@ -1090,17 +1102,17 @@
 <p>🐈 Similarly, we can learn that cats have (generally) four legs, small noses, sneaky eyes, pointy ears, fur, and short tongues.</p>
 <p>👇 4/20</p>
 <hr />
-<p>To classify a new animal 😼 we can then look at its features, and say: </p>
+<p>To classify a new animal 😼 we can then look at its features, and say:</p>
 <p>❓ If this is a dog, what are the odds of seeing this kind of fur, this kind of legs, this kind of ears, ...</p>
 <p>👇 5/20</p>
 <hr />
-<p>Likewise, we can ask: </p>
+<p>Likewise, we can ask:</p>
 <p>❓ If this is a cat, what are the odds of seeing this kind of fur, this kind of legs, this kind of ears, ...</p>
 <p>Then we compare how surprised we are between seeing a 🐕 and 🐈 with these specific features.</p>
 <p>👇 6/20</p>
 <hr />
 <p>🔶 This is a Generative Model.</p>
-<p>These models learn what are the fundamental features of a given class. Formally, these models estimate what is the probability P(f1,f2,...|C) of observing these specific features f1, f2, ..., in any given class C.</p>
+<p>These models learn what are the fundamental features of a given class. Formally, these models estimate what is the probability P(f1,f2,...,C) of observing these specific features f1, f2, ..., in any given class C.</p>
 <p>👇 7/20</p>
 <hr />
 <p>The reason they are called <em>Generative</em> is that they try to learn explicitly how an example of a given class is <em>made</em>.</p>
@@ -1115,7 +1127,7 @@
 <p>And we do not care, for example, about the number of legs or the fur.</p>
 <p>👇 10/20</p>
 <hr />
-<p>To classify, we look at the features and say: </p>
+<p>To classify, we look at the features and say:</p>
 <p>❓ Given these ears, and this nose, and these eyes, how likely is this to be a dog or a cat?</p>
 <p>We compare the two results and answer the one we are most confident about.</p>
 <p>👇 11/20</p>
@@ -1137,14 +1149,14 @@
 <p>However, depending on how you want to use the model, it can matter.</p>
 <p>👇 15/20</p>
 <hr />
-<p>Discriminative models are better at answering why (they think) this is the correct answer than generative models. </p>
+<p>Discriminative models are better at answering why (they think) this is the correct answer than generative models.</p>
 <p>They will focus on the important features for the task, and disregard anything that doesn't help them to score better at answering.</p>
 <p>👇 16/20</p>
 <hr />
 <p>Discriminative models learn not what we want, but what's useful, which can often be something completely off-track, like spurious correlations or harmful biases in the training set.</p>
 <p>👇 17/20</p>
 <hr />
-<p>Generative models often encode stronger inductive biases because they represent a hypothesis (ours) about how the data is created. </p>
+<p>Generative models often encode stronger inductive biases because they represent a hypothesis (ours) about how the data is created.</p>
 <p>This can make them more robust and controllable but if that hypothesis is too far from reality they may not learn anything useful.</p>
 <p>👇 18/20</p>
 <hr />
