@@ -1093,14 +1093,14 @@ That is, are all problems easy to validate also easy to solve?</p>
 <p><a href="https://apiad.net/tweetstorms/theorythursday-np-complete">https://apiad.net/tweetstorms/theorythursday-np-complete</a></p>
 <p>Let's think now about what would it mean to properly answer this question. 👇</p>
 <hr />
-<p>Say we want to answer "yes". How can we do that? Do we have to check that <em>all</em> NP problems are actually in P? </p>
+<p>Say we want to answer "yes". How can we do that? Do we have to check that <em>all</em> NP problems are actually in P?</p>
 <p>👉 To begin, there are infinitely many problems in Computer Science.
 There must a better way...</p>
 <hr />
 <p>🤔 What if we could prove that just answering yes to <em>one problem</em> would automatically answer yes to <em>any other problem</em>?</p>
 <p>Imagine that, a CS problem that would represent them all, such that solving that problem would immediately give you a solution to any other (NP) problem.</p>
 <hr />
-<p>Say we have two problems A and B. For example, say A = sorting an array (SORT), and B = finding the minimum element (MIN). </p>
+<p>Say we have two problems A and B. For example, say A = sorting an array (SORT), and B = finding the minimum element (MIN).</p>
 <p>How can we prove that B is at least as easy as A? In other words, if we have a polynomial algorithm for solving A, we must also have one for solving B. 👇</p>
 <hr />
 <p>What we need is a polynomial-time reduction from B to A. This sounds complicated, but it's very intuitive.</p>
@@ -1126,11 +1126,11 @@ def min(items):
 <p>❓ Given a Boolean formula, with variables and Boolean operators, such as <em>x &amp; y | z</em>,
 is there any assignment of True/False to each variable that makes the formula True?</p>
 <hr />
-<p>Sometimes the formula is extremely easy, but when it involves several copies if the same variable, some positive and some negative, it is not trivial to, just looking at the formula, decide if it's satisfiable. </p>
+<p>Sometimes the formula is extremely easy, but when it involves several copies if the same variable, some positive and some negative, it is not trivial to, just looking at the formula, decide if it's satisfiable.</p>
 <p>👉 However, it is very easy to validate, so SAT is clearly in NP.</p>
 <hr />
 <p>🤔 Now, how can you go on proving that SAT is a problem to which any other problem in NP is polynomially-reducible to?</p>
-<p>First, remember we are concerned <em>only</em> with decision problems, i.e., problems whose answer is True or False. </p>
+<p>First, remember we are concerned <em>only</em> with decision problems, i.e., problems whose answer is True or False.</p>
 <p>Here are some intuitions... 👇</p>
 <hr />
 <p>Say we have a decision problem B that is in NP. This means there is a polynomial algorithm V to verify if a solution of B for a specific input I is indeed True.</p>
@@ -1142,26 +1142,23 @@ is there any assignment of True/False to each variable that makes the formula Tr
 <p>👉 An intuitive way to see that such formula must be possible to build, is to consider that whatever V is, it is a program composed in the end of a bunch of basic instructions.</p>
 <hr />
 <p>☝️ We can always build a formula, in principle, that says "this instruction was executed" and so kind of trace the execution of V in a Boolean form.</p>
-<p>Formally, this is done with the Turing-machine definition of V, but intuitively, think of it as disassembling code of V.</p>
+<p>Formally, this is done with the Turing-machine definition of V, but intuitively, think of it as disassembling the code of V.</p>
 <hr />
-<p>For any input I, we can build in polynomial time a formula F whose satisfiable iif B would answer True to I.</p>
+<p>For any input I, we can build in polynomial time a formula F that is satisfiable iif B would answer True to I.</p>
 <p>We can then run SAT(F), and we have a polynomial-time solution for B(I).</p>
 <p>⭐ And that's it! We have one problem, SAT, that can solve any other problem in NP.</p>
 <hr />
-<p>This problem, SAT, is the first of the so-called NP-Complete problems. </p>
-<p>A problem in NP that is so general, that any other problem in NP could be solved in polynomial time if you could solve that one problem. </p>
+<p>This problem, SAT, is the first of the so-called NP-Complete problems.</p>
+<p>A problem in NP that is so general, that any other problem in NP could be solved in polynomial time if you could solve that one problem.</p>
 <p>But is not the only one! 👇</p>
 <hr />
 <p>The most surprising finding is not SAT itself, but rather that is there is a huge number of such problems, seemingly very different, but in their core all equivalent:</p>
-<ul>
-<li>🔹 Traveling salesman</li>
-<li>🔹 Scheduling</li>
-<li>🔹 Knapsack</li>
-<li>🔹 Clique</li>
-<li>🔹 Graph coloring</li>
-<li>🔹 Hamiltonian cycles</li>
-<li>🔹 ...</li>
-</ul>
+<p>🔹 Traveling salesman,
+🔹 Scheduling,
+🔹 Knapsack,
+🔹 Clique,
+🔹 Graph coloring,
+🔹 Hamiltonian cycles, and more!</p>
 <hr />
 <p>As usual, if you like this topic, reply in this thread or @ me at any time. Feel free to ❤️ like and 🔁 retweet if you think someone else could benefit from knowing this stuff.</p>
 <p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/theorythursday-np-complete">https://apiad.net/tweetstorms/theorythursday-np-complete</a></p>
@@ -1174,10 +1171,6 @@ is there any assignment of True/False to each variable that makes the formula Tr
 <li>📄 <a href="https://en.wikipedia.org/wiki/Karp%27s_21_NP-complete_problems">https://en.wikipedia.org/wiki/Karp%27s_21_NP-complete_problems</a></li>
 <li>🎥 <a href="https://www.youtube.com/watch?v=dJUEkjxylBw">https://www.youtube.com/watch?v=dJUEkjxylBw</a></li>
 </ul>
-<hr />
-<blockquote>
-<p>🗨️ You can see this tweetstorm as originally posted in <a href="">this Twitter thread</a>.</p>
-</blockquote>
                 
               
               
