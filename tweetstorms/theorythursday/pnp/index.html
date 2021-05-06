@@ -1085,21 +1085,22 @@
                   <h1>P vs NP</h1>
                 
                 <p>Today is #TheoryThursday 🧐!</p>
-<p>I want to talk about what is, possibly, the most important question in all of Computer Science: Does P equal NP?</p>
+<p>Allow me to share with you a previous thread about a fundamental question in Computer Science:</p>
+<p>❓ Does P equal NP?</p>
 <p>If you have heard of this and want to learn a bit more, read on... 🧵👇</p>
 <hr />
-<p>Computer Science is all about finding clever ways to solve difficult problems. </p>
+<p>Computer Science is all about finding clever ways to solve difficult problems.</p>
 <p>We have found clever algorithms for a bunch of them: sorting stuff, finding shortest paths, solving equations, simulating physics...</p>
 <p>But some problems seem to be way too hard 👇</p>
 <hr />
 <p>One example is the Travelling Salesman problem.</p>
-<p>❓ Find a cycle starting in your home city to visit all major cities in your country and return home with the least fuel cost.</p>
+<p>❓ Find a cycle starting in your city to visit all major cities in your country and return home with the least fuel cost.</p>
 <p>This is the kind of problem we expect computers to solve easily, right? That's what computers are for!</p>
 <hr />
 <p>🙈 Well, very smart people have tried, and no one has come up with an algorithm that is <em>always</em> better than simply trying all possible cycles.</p>
 <p>The problem is that the number of cycles grows exponentially faster than the number of cities!</p>
 <hr />
-<p>Let's make it even easier, what about if I simply ask: </p>
+<p>Let's make it even easier, what about if I simply ask:</p>
 <p>❓ Is it possible to visit all cities spending less than X dollars in fuel?</p>
 <p>🙈 No one still knows an algorithm to answer that question <em>precisely</em> for any value of X without trying all cycles, which again is exponential.</p>
 <hr />
@@ -1107,11 +1108,11 @@
 <p>This is the root of possibly the most important question in all of Computer Science: P vs NP.</p>
 <hr />
 <p>Answering this question is way harder than it seems. You see, most questions in CS are about objects: how to sort, how to compare, how to process...</p>
-<p>But this is a meta-question: </p>
+<p>But this is a meta-question:</p>
 <p>❓ Are there questions about objects that are intrinsically very hard to solve?</p>
 <hr />
 <p>Stephen Cook tried to answer this question in the early days of Computer Science. He came up with the following definitions:</p>
-<p>Suppose we have a question of the form: </p>
+<p>Suppose we have a question of the form:</p>
 <p>❓ Is there an object X with a given property Q?</p>
 <p>👉 We want to define how hard is this question to answer.</p>
 <hr />
@@ -1119,11 +1120,11 @@
 <p>❓ Given an array of N elements, is there an element smaller than X?</p>
 <p>Answering this question is easy. Look at each element, one by one, and compare it with X. It takes at most N steps, for any possible array.</p>
 <hr />
-<p>This is an example of a problem in P. </p>
-<p>🔑 P here means "Polynomial-Time Complexity". </p>
-<p>Intuitively, a problem is in P if there is an algorithm to <em>compute</em> a correct answer in polynomial time. </p>
+<p>This is an example of a problem in P.</p>
+<p>🔑 P here means "Polynomial-Time Complexity".</p>
+<p>Intuitively, a problem is in P if there is an algorithm to <em>compute</em> a correct answer in polynomial time.</p>
 <hr />
-<p>Now back to the Travelling Salesman, suppose I give you an answer: </p>
+<p>Now back to the Travelling Salesman, suppose I give you an answer:</p>
 <p>👉 Yes, here, this is a cycle with cost less than X.</p>
 <p>How can you verify that answer is correct? You just add the costs of all edges in the cycle. It takes again N steps.</p>
 <hr />
@@ -1131,7 +1132,7 @@
 <p>🔑 NP here means "Non-deterministic Polynomial-Time Complexity".</p>
 <p>Intuitively, a problem is in NP if there is an algorithm to <em>verify</em> a correct answer in polynomial time.</p>
 <hr />
-<p>P problems are easy to solve. NP problems, we don't know yet, but at least they are easy to verify. That's the key idea. </p>
+<p>P problems are easy to solve. NP problems, we don't know yet, but at least they are easy to verify. That's the key idea.</p>
 <p>⚠️ Note that P problems are also NP.</p>
 <p>Now, the P vs NP question, formally, is this:</p>
 <p>❓ Are there problems in NP that are not in P?</p>
@@ -1139,14 +1140,14 @@
 <p>P vs NP is basically asking if there are problems that are inherently harder to answer than to verify, independently of how smart we become in the future.</p>
 <p>🤔 Think about what this means for a second, and ask yourself what's your intuition about it.</p>
 <hr />
-<p>What's the right answer? We still don't know, but most computer scientists believe that P is not equal to NP. </p>
+<p>What's the right answer? We still don't know, but most computer scientists believe that P is not equal to NP.</p>
 <p>The reasons are mostly philosophical but there is also evidence that, if P were equal to NP, a lot of weird things would happen.</p>
 <hr />
 <p>This question is at the core of Computer Science because it talks about the nature of computation and its inherent limits, regardless of technological improvements.</p>
 <p>We'll end here for now, but there is so much left to talk about (like NP-completeness). So stick around 👋...</p>
 <hr />
 <p>As usual, if you like this topic, reply in this thread or @ me at any time. Feel free to ❤️ like and 🔁 retweet if you think someone else could benefit from knowing this stuff.</p>
-<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/theorythursday-pnp">https://apiad.net/tweetstorms/theorythursday-pnp</a></p>
+<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/theorythursday/pnp">https://apiad.net/tweetstorms/theorythursday/pnp</a></p>
 <hr />
 <p>Stay curious 🖖:</p>
 <ul>
@@ -1155,10 +1156,8 @@
 <li>📄 <a href="https://en.wikipedia.org/wiki/P_versus_NP_problem">https://en.wikipedia.org/wiki/P_versus_NP_problem</a></li>
 <li>🎥 <a href="https://youtu.be/dJUEkjxylBw">https://youtu.be/dJUEkjxylBw</a></li>
 </ul>
-<hr />
-<blockquote>
-<p>🗨️ You can see this tweetstorm as originally posted in <a href="https://twitter.com/AlejandroPiad/status/1316706290345873408">this Twitter thread</a>.</p>
-</blockquote>
+                
+                  
                 
               
               

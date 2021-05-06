@@ -1085,19 +1085,19 @@
                   <h1>Context-Free Grammars</h1>
                 
                 <p>Today is #TheoryThursday 🧐!</p>
-<p>I want to talk about a tiny part of a topic that is one of my passions: Formal Language Theory.</p>
+<p>Allow me share with you a previous thread of mine about formal language theory:</p>
 <p>❓ Why can't you use regular expressions to process HTML? 🧵👇</p>
 <hr />
-<p>You probably know a bunch of different "programming" languages, right? 
+<p>You probably know a bunch of different "programming" languages, right?
 Python, Java, C++, JavaScript, HTML... There have different keywords, expressions, punctuation rules, braces, ...</p>
-<p>❓ What is the one thing they all have in common? </p>
+<p>❓ What is the one thing they all have in common?</p>
 <p>👉 They can be infinitely nested.</p>
 <hr />
 <p>In all these languages you have some constructions (e.g., expressions) which can be as complex as you desire. These constructions are defined recursively. For example:</p>
 <p>✏️ An expression is either a number, or a sum, subtraction, multiplication, or division of two expressions.</p>
 <hr />
 <p>❓ But is HTML a programming language or not?</p>
-<p>Who cares? HTML has recursive constructions as well. 
+<p>Who cares? HTML has recursive constructions as well.
 From the syntax perspective, which is what we are discussing here, it is of the same nature as all the other.</p>
 <p>(☝️ We are talking about syntax, not semantics here)</p>
 <hr />
@@ -1111,8 +1111,8 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <li>👎 63 + ) 23 * ( -- is an invalid sequence</li>
 </ul>
 <hr />
-<p>Here is one possible grammar for expressions. </p>
-<p>Starting with the symbol <code>&lt;Expression&gt;</code> and applying randomly any rule (called a <em>production</em>), you will always reach some combination of <code>NUMBER</code> and the symbols <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>(</code>, <code>)</code> that is valid. </p>
+<p>Here is one possible grammar for expressions.</p>
+<p>Starting with the symbol <code>&lt;Expression&gt;</code> and applying randomly any rule (called a <em>production</em>), you will always reach some combination of <code>NUMBER</code> and the symbols <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>(</code>, <code>)</code> that is valid.</p>
 <p>This is called a <em>derivation</em>.</p>
 <!--
 
@@ -1143,7 +1143,7 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <span class="o">-&gt;</span> <span class="n">NUMBER</span> <span class="o">+</span> <span class="p">(</span> <span class="o">&lt;</span><span class="n">Expression</span><span class="o">&gt;</span> <span class="p">)</span>   <span class="err">#</span> <span class="kr">apply</span> <span class="mi">8</span><span class="err">️</span>
 <span class="o">-&gt;</span> <span class="err">#</span> <span class="p">...</span>
 
-<span class="cp"># And you can continue recursively building the expression as </span>
+<span class="cp"># And you can continue recursively building the expression as</span>
 <span class="cp"># complex as you desire.</span>
 </code></pre></div>
 
@@ -1153,7 +1153,8 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 
 <p><img alt="" src="../grammar_1.png" /></p>
 <hr />
-<p>👉 What's more, any possible arithmetic expression can be formed by some sequence of applications of that grammar rules. Even better, in this particular example, there is <em>exactly</em> one such sequence for any valid expression.</p>
+<p>👉 What's more, any possible arithmetic expression can be formed by some sequence of applications of that grammar rules.</p>
+<p>Even better, in this particular example, there is <em>exactly</em> one such sequence for any valid expression.</p>
 <hr />
 <p>❓ Why is this relevant?</p>
 <p>Because we can analyze the syntactic complexity of all programming languages just by analyzing the language for expressions. They are all equally complex.</p>
@@ -1166,7 +1167,7 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <p>If that sequence exists, then we know that it is a valid expression, and even more, we know everything we need to evaluate it.</p>
 <p>💡 Parsing is the first step that all compilers and interpreters do, from Python to C++, to yes, the HTML parser in Chrome.</p>
 <hr />
-<p>Now we come round back to regular expressions. </p>
+<p>Now we come round back to regular expressions.</p>
 <p>👉 It turns out that standard regular expressions are computationally insufficient to parse any language that requires a context-free grammar.</p>
 <p>(😢 While proving this is not hard, sadly it is too long for this thread)</p>
 <hr />
@@ -1177,7 +1178,7 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <p>You won't make any new friends, but at least you'll be right 😝</p>
 <hr />
 <p>As usual, if you like this topic, reply in this thread or @ me at any time. Feel free to ❤️ like and 🔁 retweet if you think someone else could benefit from knowing this stuff.</p>
-<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/theorythursday-cfg">https://apiad.net/tweetstorms/theorythursday-cfg</a></p>
+<p>🧵 Read this thread online at <a href="https://apiad.net/tweetstorms/theorythursday/cfg">https://apiad.net/tweetstorms/theorythursday/cfg</a></p>
 <hr />
 <p>Stay curious 🖖:</p>
 <ul>
@@ -1187,10 +1188,8 @@ From the syntax perspective, which is what we are discussing here, it is of the 
 <li>😆 <a href="https://stackoverflow.com/questions/1732348/">https://stackoverflow.com/questions/1732348/</a></li>
 <li>🖼️ <a href="https://xkcd.com/208/">https://xkcd.com/208/</a></li>
 </ul>
-<hr />
-<blockquote>
-<p>🗨️ You can see this tweetstorm as originally posted in <a href="https://twitter.com/AlejandroPiad/status/1309193959319666689">this Twitter thread</a>.</p>
-</blockquote>
+                
+                  
                 
               
               
