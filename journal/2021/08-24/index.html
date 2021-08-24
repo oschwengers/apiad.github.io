@@ -16,7 +16,7 @@
     
     
       
-        <title>August 24th - Alejandro Piad</title>
+        <title>August 24 - Alejandro Piad</title>
       
     
     
@@ -64,6 +64,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#entry-1-august-24th-2021" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              August 24th
+              August 24
             
           </span>
         </div>
@@ -824,9 +829,11 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        August 24th
+        August 24
       </a>
       
     </li>
@@ -858,13 +865,39 @@
               
                 
                 
-                  <h1>August 24th</h1>
-                
-                <p><strong>Entry #1</strong> - August 24th, 2021</p>
-<p>Dear Journal:</p>
+                <h1 id="entry-1-august-24th-2021">Entry #1 - August 24th, 2021<a class="headerlink" href="#entry-1-august-24th-2021" title="Permanent link">&para;</a></h1>
+<p><em>Dear Journal:</em></p>
 <p>Is this even the right way to start a journal? Anyway. This is my Nth attempt at starting a journal. I hope this time it lasts. The purpose of this journal is to document my daily thoughts in a way that is less polished and thus takes less time than, say, a blog article or a full essay. So this is me, as unpolished as it gets (well, actually, since this is an electronic medium, I cannot help but comeback and fix some typos here and there, but I'm promissing myself not to consciously edit these words after typing them.)</p>
-<p>Why English, though? It's weird, but I find it easier to organize my thoughts if I have to think in English, perhaps because, not being my native language, it forces me to think harder. At the same time, it's an excuse to practice writing in English, which is around half of my daytime job. So, here I am embracing writing a journal in a foreign language, in the hope that the future me will not consider it stupid. So, on with the content!</p>
+<p>Why English, though? It is weird, but I find it easier to organize my thoughts if I have to think in English, perhaps because, not being my native language, it forces me to think harder. At the same time, it's an excuse to practice writing in English, which is around half of my daytime job. So, here I am embracing writing a journal in a foreign language, in the hope that the future me will not consider it stupid.</p>
+<p>So, on with the content!</p>
 <hr />
+<p>I've spent most of the day tweaking things here and there on a few projects.
+At one point, I decided to turn a piece of code in a side gig into a full-featured project in itself, but I stumbled against a wall.
+Long story short, a few weeks ago I was trying <code>strapi</code> for a project, but found it extremely convoluted, slow, and big for what I needed.
+So I decided to hack a poor man's headless CMS using just <code>streamlit</code>, <code>fastapi</code>, and <code>MongoDB</code>.
+And it worked! For the most part, at least.</p>
+<p>So, I figured, "I should turn this into a Python module in itself!"
+Haha, how naive of me.
+I created the GitHub repository, the README and LICENSE files, and then, when I was just about to start hacking, I stumbled again with the millenia question: "Which Python package manager should I use?".</p>
+<p>The last time I succesfully started a Python project, it was with <code>autogoal</code>, and we used <code>Poetry</code> for that.
+And don't get me wrong, <code>Poetry</code> is probably as good as it gets in the Python build ecosystem, but it is still lacking.
+For starters, it's pretty slow, especially when dependencies become slightly big, and you're on a slightly slow connection (hello, Cuba, anyone?).
+Part of the reason is that <code>Poetry</code> sometimes, apparently more often than not, has to <em>download a damn Python package</em> just to inspect it's dependencies!</p>
+<p>So I've been hunting for an alternative solution for a while.
+Flirted with <code>flit</code> a little, but it doesn't do dependency resolution (at the moment of writing this at least).
+I also saw <code>pyflow</code>, and kind of made my mind, but then the FOMO started kicking really hard.
+I started thinking "It's 2021 already, I must be missing something, there has to be a better way".
+Thus, I navigated GitHub up and down looking for cookiecutter recipes for Python projects, and no, everything is still so 2020.</p>
+<p>And sadly, I came once again to the conclusion that, as there are N solutions for making Python projects, and none works for me, I'll have the invent the N+1!</p>
+<p>So now I'm giving myself some time to talk myself out of this idea.
+If I succeed, I'll probably give <code>Poetry</code> another shot.
+If I fail, then I'll probably try to hack together yet another Python project management workflow.
+I think it's gonna be pure Docker-based...</p>
+<p>Yes! That's it! You just clone, <code>docker-compose up</code>, and the project will be totally self-contained.
+You won't even need to have Python installed!
+This is gonna be the beginning of a great adventure! Or not.
+I guess the next few days will be decisive.</p>
+<p>I'll probably get back here and leave a note about whatever turns out from this idea <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" />!</p>
                 
               
               
